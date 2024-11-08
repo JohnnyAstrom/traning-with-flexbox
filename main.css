@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  background-color: blue;
+  color: white;
+  padding: 0 20px; /* Padding for aesthetics */
+  height: 10vh; /* Fixed height for the header */
+}
+
+.main {
+  display: flex; /* Flex layout for main area */
+  height: 80vh; /* Fixed height for main */
+}
+
+.sidebar {
+  background-color: rgb(50, 224, 50);
+  width: 8.33%; /* Approximately 1 out of 12 columns (1/12 * 100%) */
+}
+
+.content {
+  display: flex; /* Flex layout for content area */
+  flex: 1; /* Take the remaining space */
+  background-color: rgb(98, 211, 248);
+}
+
+.main-content {
+  display: flex; /* Flex layout for main articles */
+  flex-direction: column; /* Stack articles vertically */
+  flex: 2; /* Take two-thirds of the space */
+  gap: 10px; /* Space between articles */
+  padding: 10px; /* Padding for aesthetics */
+}
+
+.main-article-1,
+.main-article-2,
+.main-article-3,
+.main-article-4 {
+  background-color: yellow;
+  padding: 10px; /* Padding for content */
+}
+
+.side-content {
+  display: flex; /* Flex layout for side articles */
+  flex-direction: column; /* Stack side articles vertically */
+  flex: 1; /* Take one-third of the space */
+  gap: 10px; /* Space between side articles */
+  padding: 10px; /* Padding for aesthetics */
+}
+
+.side-article-1,
+.side-article-2,
+.side-article-3 {
+  background-color: rgb(133, 133, 133);
+  padding: 10px; /* Padding for content */
+}
+
+.footer {
+  background-color: red;
+  color: white;
+  text-align: center; /* Center text */
+  height: 10vh; /* Fixed height for the footer */
+  padding: 10px; /* Padding for aesthetics */
+}
